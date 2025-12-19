@@ -3,7 +3,7 @@
 using namespace std;
 
 void linear_search(int n)
-{//O(n) time complexity.
+{
     vector<int> a(n);
     for(int i = 0; i < n; i++)
         a[i] = i;

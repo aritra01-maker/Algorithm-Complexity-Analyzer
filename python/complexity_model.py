@@ -1,4 +1,3 @@
-#COMPLEXITY MODELS
 import math
 
 def constant(n): return 1

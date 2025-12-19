@@ -1,7 +1,6 @@
-#CLASSIFICATION ENGINE
 import csv
 from collections import defaultdict
-from complexity_models import models
+from complexity_model import models
 from fit_model import fit_model
 
 data = defaultdict(lambda: ([], []))

@@ -3,7 +3,7 @@
 using namespace std;
 
 void binary_search_algo(int n)
-{//O(logn) time complexity.
+{
     vector<int> a(n);
     for(int i = 0; i < n; i++)
         a[i] = i;

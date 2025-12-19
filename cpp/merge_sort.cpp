@@ -3,7 +3,7 @@
 using namespace std;
 
 void merge_sort_util(vector<int>& a, int l, int r)
-{//O(nlogn)time complexity.
+{
     if(l >= r) return;
     int m = (l + r) / 2;
     merge_sort_util(a, l, m);

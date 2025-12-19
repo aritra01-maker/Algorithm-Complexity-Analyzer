@@ -3,7 +3,7 @@
 using namespace std;
 
 void bubble_sort(int n)
-{//O(n^2)time complexity
+{
     vector<int> a(n);
     for(int i = 0; i < n; i++)
         a[i] = rand();
@@ -30,12 +30,3 @@ int main()
         cout << "Bubble n=" << n << " done\n";
     }
 }
-/*
-Research reasoning
-
-->n = 2^k → geometric growth
-
-->Run 5 times → noise reduction
-
-->Average runtime recorded
-*/
