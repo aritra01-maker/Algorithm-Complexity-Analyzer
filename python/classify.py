@@ -1,4 +1,5 @@
 import csv
+import numpy as np
 from collections import defaultdict
 import matplotlib.pyplot as plt
 import os
@@ -19,6 +20,9 @@ with open("data/timings.csv") as f:
 # Classify
 for algo in data:
     ns, ts = data[algo]
+    ns = np.array(ns)
+    ts = np.array(ts)
+    
     errors = {}
     fitted_curves = {}
 

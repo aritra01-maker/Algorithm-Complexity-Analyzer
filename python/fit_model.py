@@ -20,3 +20,4 @@ def fit_model(ns, ts, f):
     # Compute error as sum of squared relative differences
     error = np.sum(((obs_ratios - expected_ratios) / expected_ratios) ** 2)
     return error
+
