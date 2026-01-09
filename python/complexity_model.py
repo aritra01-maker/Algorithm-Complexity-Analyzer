@@ -1,10 +1,24 @@
-import math
+import numpy as np
 
-def constant(n): return 1
-def logn(n): return math.log(n)
-def linear(n): return n
-def nlogn(n): return n * math.log(n)
-def quadratic(n): return n * n
+def constant(n):
+    n = np.array(n, dtype=float)
+    return np.ones_like(n)
+
+def logn(n):
+    n = np.array(n, dtype=float)
+    return np.log(n + 1)
+
+def linear(n):
+    n = np.array(n, dtype=float)
+    return n
+
+def nlogn(n):
+    n = np.array(n, dtype=float)
+    return n * np.log(n + 1)
+
+def quadratic(n):
+    n = np.array(n, dtype=float)
+    return n**2
 
 models = {
     "O(1)": constant,
